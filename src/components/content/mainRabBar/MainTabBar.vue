@@ -1,5 +1,5 @@
 <template>
-  <TabBar>
+  <TabBar class="tabBar">
     <TabBarItem path="/home" activeColor="deeppink">
       <img slot="item-icon" src="~assets/img/tabbar/home.svg" alt="">
       <img slot="item-icon-active" src="~assets/img/tabbar/home_active.svg" alt="">
@@ -36,5 +36,7 @@ export default {
 </script>
 
 <style scoped>
-
+.tabBar{
+  z-index: 10;
+}
 </style>

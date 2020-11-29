@@ -26,6 +26,7 @@ export default {
   methods:{
     itemClick(index){
       this.currentIndex=index;
+      this.$emit('tabClick',index)
     },
   }
 }
@@ -38,6 +39,8 @@ export default {
     line-height: 40px;
     font-size: 15px;
     text-align: center;
+    background-color: #fff;
+    z-index: 9;
   }
   .tab-controller-item{
     flex: 1;
